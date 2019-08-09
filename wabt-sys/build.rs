@@ -68,7 +68,7 @@ fn get_cpp_stdlib() -> Option<String> {
         } else if target.contains("freebsd") {
             Some("c++".to_string())
         } else if target.contains("musl") {
-            Some("static=stdc++".to_string())
+            Some("stdc++".to_string())
         } else {
             Some("stdc++".to_string())
         }
